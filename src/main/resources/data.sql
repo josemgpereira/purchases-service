@@ -1,0 +1,2 @@
+insert into details(id,description,quantity,purchase_value) values('1','Carlsberg 25 cl','6','4.99')
+insert into purchase(id,product_type,expires,details_id) values ('1','cb','2020-11-10 12:00:00','1')
