@@ -18,13 +18,13 @@ public class Details {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull(message = "Description is required.")
+    @NotNull(message = "{description.is.required}")
     private String description;
 
-    @NotNull(message = "Quantity is required.")
+    @NotNull(message = "{quantity.is.required}")
     Integer quantity;
 
-    @NotNull(message = "Value is required.")
+    @NotNull(message = "{value.is.required}")
     @Column(name = "purchase_value")
     Double value;
 

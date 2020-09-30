@@ -19,14 +19,14 @@ public class Purchase {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull(message = "Product type is required.")
+    @NotNull(message = "{product.type.is.required}")
     private String productType;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
-    @NotNull(message = "Expiration date is required.")
+    @NotNull(message = "{expiration.date.is.required}")
     private LocalDateTime expires;
 
-    @NotNull(message = "Details are required.")
+    @NotNull(message = "{details.are.required}")
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "details_id")
     private Details purchaseDetails;
