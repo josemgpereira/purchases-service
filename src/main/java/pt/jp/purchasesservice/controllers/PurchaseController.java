@@ -82,6 +82,6 @@ public class PurchaseController {
             throw new ResourceNotFoundException("Purchase with id " + id + " not found.");
         }
         purchaseService.deletePurchase(id);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent().build();
     }
 }
