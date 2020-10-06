@@ -18,7 +18,7 @@ import java.util.Set;
 public class SwaggerConfiguration {
 
     public static final Contact DEFAULT_CONTACT = new Contact("José Pereira", "https://www.jp.com", "jose.m.g.pereira@hotmail.com");
-    private static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Api Documentation", "Api Documentation", "1.0", "urn:tos", DEFAULT_CONTACT, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", new ArrayList());
+    private static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Api Documentation", "Api Documentation", "1.0", "http://swagger.io/terms/", DEFAULT_CONTACT, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", new ArrayList());
     private static final Set<String> DEFAULT_PRODUCES_AND_CONSUMES = new HashSet<String>(Arrays.asList("application/json"));
 
     @Bean
